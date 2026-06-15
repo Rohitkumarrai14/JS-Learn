@@ -40,3 +40,26 @@ let myObj={
  //the non primetive type are mainly object type 
  //null is also the obejct type 
  
+//**********************************************************************
+//how memory allocatio0n done 
+
+//1.stack memory(Primitive) ,Heap(Non Primitive)
+
+let myName="rohitrai" //All the primitive value goes into the stack
+let anotherName=myName
+ anotherName="raj"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne={
+    email:"user@gmail.com",
+    upi:"dkjd@ybl"
+}
+let userTwo=userOne
+ userTwo.email="kjfkfk@gmail.com"
+
+ console.log(userOne.email)    //value of the user one change 
+ console.log(userTwo.email)    // same as the userTwo.
+ 
+
